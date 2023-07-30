@@ -1,5 +1,109 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+footer {
+  background-color: #ffffff;
+  padding-bottom: 58px;
+  max-width: 100%;
+}
+footer .container {
+  display: flex;
+}
+@media (max-width: 910px) {
+  footer .container {
+    display: grid !important;
+  }
+}
+footer .container li:nth-child(1) {
+  padding-top: 38px;
+}
+footer .container ul.footer-menu {
+  display: flex !important;
+  padding-top: 34px;
+}
+@media (max-width: 910px) {
+  footer .container ul.footer-menu {
+    display: grid !important;
+  }
+}
+footer .container ul.footer-menu li {
+  margin-right: 40px;
+}
+footer .container ul.footer-menu li a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(65, 65, 65);
+}
+footer .container ul.footer-menu li:nth-child(1) {
+  margin-top: -27px;
+}
+footer .container ul.footer-menu li:nth-child(2) {
+  margin-top: 10px;
+}
+footer .container ul.footer-menu li:nth-child(3) {
+  margin-top: 10px;
+}
+footer .container ul.footer-menu li:nth-child(4) {
+  margin-top: 10px;
+}
+footer .container ul.footer-menu li:nth-child(5) {
+  margin-top: 10px;
+}
+footer .container ul.num {
+  display: flex;
+  padding-top: 40px;
+}
+@media (max-width: 910px) {
+  footer .container ul.num {
+    display: grid !important;
+  }
+}
+footer .container ul.num li {
+  margin-right: 16px;
+}
+footer .container ul.num li:nth-child(1) {
+  margin-top: -37px;
+}
+footer .container ul.num .flex {
+  display: flex !important;
+}
+footer .container ul.num .flex .number {
+  display: flex;
+  margin-left: 40px;
+}
+footer .container ul.num .flex .number img {
+  width: 24px;
+  height: 24px;
+}
+footer .container ul.num .flex .number p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(65, 65, 65);
+  padding-left: 8px;
+}
+footer .container ul.num .flex .company {
+  margin-left: -150px;
+  display: flex;
+  margin-top: 30px;
+}
+footer .container ul.num .flex .company p.design {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(65, 65, 65);
+}
+footer .container ul.num .flex .company img {
+  width: 100px;
+  height: 10px;
+  margin-top: 5px;
+  margin-left: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +148,8 @@ nav {
   border: none !important;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 1111;
+  order: 1;
   background-color: white;
 }
 nav .container {
@@ -82,6 +187,11 @@ nav .container .drop-down {
   background-color: rgb(112, 192, 91);
   height: 40px !important;
   border-radius: 4px;
+}
+@media (max-width: 690px) {
+  nav .container .drop-down {
+    display: none !important;
+  }
 }
 nav .container .drop-down i.fa {
   color: white;
@@ -125,6 +235,11 @@ nav .container ul.Menu {
   display: flex;
   margin-left: 40px;
 }
+@media (max-width: 690px) {
+  nav .container ul.Menu {
+    display: none !important;
+  }
+}
 @media (max-width: 980px) {
   nav .container ul.Menu {
     margin-left: 20px !important;
@@ -148,6 +263,11 @@ nav .container ul.Menu li a h5 {
 }
 nav .container ul.acc {
   display: flex;
+}
+@media (max-width: 690px) {
+  nav .container ul.acc {
+    display: none !important;
+  }
 }
 nav .container ul.acc li a h5 {
   margin-top: 8px;
@@ -173,6 +293,57 @@ nav .container ul.acc li a i.fa {
   }
 }
 
+.nav-bottom {
+  position: fixed;
+  margin-top: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  top: 880px;
+  z-index: 1111;
+  order: 1;
+  display: none;
+}
+@media (max-width: 400px) {
+  .nav-bottom {
+    display: block;
+    display: flex;
+  }
+}
+@media (max-width: 340px) {
+  .nav-bottom {
+    top: 955px;
+  }
+}
+.nav-bottom .drop-down {
+  display: flex;
+  background-color: rgb(112, 192, 91);
+  height: 40px !important;
+  border-radius: 4px;
+  width: 35px;
+}
+.nav-bottom .drop-down i.fa {
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-bottom ul.Menu {
+  display: flex;
+  margin-left: 16px;
+}
+.nav-bottom ul.Menu li {
+  text-align: center;
+  margin-right: 16px;
+}
+.nav-bottom ul.Menu li a h5 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(65, 65, 65);
+}
+
 .header-img img {
   margin-top: 110px;
   width: 100%;
@@ -182,12 +353,21 @@ header {
   background-color: #FBF8EC;
   margin-top: -10px;
   padding-top: 80px;
-  height: 1900px;
+}
+@media (max-width: 730px) {
+  header {
+    height: 5820px !important;
+  }
 }
 header .container ul.about {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+@media (max-width: 530px) {
+  header .container ul.about {
+    display: grid !important;
+  }
 }
 header .container ul.about li {
   text-align: center;
@@ -215,11 +395,25 @@ header .container .row {
   justify-content: space-between;
   margin-bottom: 120px;
 }
+@media (max-width: 730px) {
+  header .container .row {
+    display: grid !important;
+    justify-content: center;
+  }
+  header .container .row .col-3 {
+    margin-bottom: 40px;
+  }
+}
 header .container .row .col-3 {
   border-radius: 4px;
   height: 380px !important;
   background-color: white;
   width: 280px;
+}
+@media (max-width: 1380px) {
+  header .container .row .col-3 {
+    width: 224px !important;
+  }
 }
 header .container .row .col-3:hover {
   box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
@@ -227,6 +421,12 @@ header .container .row .col-3:hover {
 header .container .row .col-3:hover .img .heart {
   left: 240px;
   transition: 0.5s;
+}
+@media (max-width: 1380px) {
+  header .container .row .col-3 .col-3:hover .img .heart {
+    left: 100px;
+    transition: 0.5s;
+  }
 }
 header .container .row .col-3 .img {
   overflow: hidden;
@@ -308,6 +508,11 @@ header .container .row .col-3 p.text {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+@media (max-width: 1380px) {
+  header .container .row .col-3 p.text {
+    width: 208px !important;
+  }
+}
 header .container .row .col-3 ul.star {
   display: flex;
   margin-left: 8px;
@@ -337,10 +542,25 @@ header .container .row .col-3 button {
   text-align: center;
   margin-left: 8px;
 }
+@media (max-width: 1380px) {
+  header .container .row .col-3 button {
+    width: 208px !important;
+  }
+}
 header .container .row .col-3 button:hover {
   color: white;
   background-color: rgb(255, 102, 51);
   border: 1px solid rgb(255, 102, 51);
+}
+@media (max-width: 1380px) {
+  header .container .row .col-3:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 730px) {
+  header .container .row .col-3:nth-child(4) {
+    display: block;
+  }
 }
 header .container .row:nth-child(2) {
   padding-bottom: 120px;
@@ -380,6 +600,13 @@ section .container .row .col-6 {
   background-color: rgb(252, 213, 186);
   border-radius: 4px;
   box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+@media (max-width: 690px) {
+  section .container .row .col-6 {
+    display: grid !important;
+    width: 330px !important;
+    height: 400px !important;
+  }
 }
 section .container .row .col-6 .col-3 {
   width: 258px;
@@ -424,6 +651,14 @@ main .container ul {
   display: flex;
   padding-bottom: 24px;
 }
+@media (max-width: 504px) {
+  main .container ul {
+    display: grid !important;
+  }
+}
+main .container ul li {
+  margin-bottom: 20px;
+}
 main .container ul li {
   margin-right: 24px;
 }
@@ -466,10 +701,26 @@ section.about .container h1 {
 section.about .container .row {
   justify-content: space-between;
 }
+@media (max-width: 1320px) {
+  section.about .container .row {
+    justify-content: center;
+  }
+  section.about .container .row .col-4 {
+    margin-bottom: 40px;
+  }
+}
 section.about .container .row .col-4 {
-  width: 376px;
+  max-width: 376px;
   background-color: white;
   border-radius: 4px;
+}
+@media (max-width: 410px) {
+  section.about .container .row .col-4 {
+    width: 300px !important;
+  }
+  section.about .container .row .col-4 img {
+    width: 300px !important;
+  }
 }
 section.about .container .row .col-4 img {
   border-top-left-radius: 4px;

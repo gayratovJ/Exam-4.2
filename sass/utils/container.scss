@@ -1,1 +1,32 @@
 @use "../pages/Главная.scss";
+
+
+.container {
+  margin-left: 116px;
+  margin-right: 116px;
+  max-width: 100%;
+
+  @media (max-width:980px) {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}

@@ -1,0 +1,183 @@
+@use "../utils/footer.scss";
+@use "../utils/header.scss";
+@use "../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+// variables
+$font-family: 'Rubik',
+sans-serif;
+$main-color:rgba(65, 65, 65, 1);
+$hard:rgba(143, 143, 143, 1);
+$hardest:rgba(96, 96, 96, 1);
+
+// coding
+header {
+  background-color: #FBF8EC;
+  padding-top: 137px;
+  height: 600px !important;
+
+  @media (max-width:630px) {
+    height: 700px !important;
+  }
+
+  @media (max-width:555px) {
+    height: 840px !important;
+  }
+
+  .container {
+    ul.about {
+      display: flex;
+
+      li:nth-child(1) {
+        a {
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: $main-color;
+
+          &:hover {
+            color: $hard;
+          }
+        }
+
+        i.fa {
+          width: 24px;
+          height: 24px;
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+      }
+
+      li:nth-child(2) {
+        a {
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: $hard;
+        }
+      }
+    }
+
+    h1 {
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 96px;
+      color: $main-color;
+    }
+
+    ul.con {
+      @media (max-width:630px) {
+        display: grid !important;
+        justify-content: center;
+
+        li:nth-child(1) {
+          margin-bottom: 40px;
+        }
+      }
+
+      display: flex;
+      padding-bottom: 120px;
+
+      li:nth-child(1) {
+        margin-right: 80px;
+      }
+
+      li {
+        display: flex;
+
+        i.fa {
+          margin-right: 8px;
+          margin-top: 8px;
+        }
+
+        .add {
+          p {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            color: $main-color;
+          }
+
+          h4 {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 36px;
+            color: $main-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  background-color: #FBF8EC;
+  padding-bottom: 80px;
+  padding-top: 34px;
+  height: 400px;
+
+  .container {
+    h1 {
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 54px;
+      color: $main-color;
+      padding-bottom: 40px;
+    }
+
+    ul {
+      display: flex;
+      padding-bottom: 24px;
+
+      @media (max-width:504px) {
+        display: grid !important;
+
+      }
+
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      li {
+        margin-right: 24px;
+
+        button {
+          background-color: rgba(243, 242, 241, 1);
+          border: none;
+          border-radius: 4px;
+          width: 97px;
+          height: 32px;
+
+          &:hover {
+            background-color: rgba(112, 192, 91, 1);
+            transition: 0.5s;
+
+            a {
+              color: white;
+            }
+          }
+
+          a {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: $hardest;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+$main-color:#414141;
+$hard:#BFBFBF;
+$harderst:#606060;
+$main-green:#70C05B;
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.onclickBtn * {
+  color: white !important;
+}
+
+.onclickBtn {
+  border: 1px solid #F63 !important;
+  background-color: #F63 !important;
+}
+
+main {
+  font-family: 'Rubik', sans-serif;
+  background-color: black;
+
+  section {
+    .container {
+
+      .row {
+        display: flex !important;
+        justify-content: space-between;
+
+        @media (max-width:1124px) {
+          display: grid !important;
+          justify-content: center;
+
+          .col-3 {
+            margin-bottom: 40px;
+          }
+        }
+
+        .col-3 {
+          width: 272px;
+          background-color: white;
+          border-radius: 4px;
+          margin-bottom: 40px;
+
+          &:hover {
+            box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.20);
+
+            .img {
+              .heart {
+                left: 240px;
+                transition: 0.5s;
+              }
+            }
+          }
+
+          @media (max-width:1380px) {
+            width: 224px !important;
+          }
+
+          .product-Flex {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px;
+
+            .product-card-flex1 {
+              p.head {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+                color: $main-color;
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: $hard;
+                margin-top: 0px;
+              }
+            }
+
+            .product-card-flex {
+              p.Price {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $harderst;
+              }
+
+              h3 {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                color: $hard;
+                margin-top: 0px;
+              }
+            }
+          }
+
+          .product-card-footer {
+            p.text {
+              width: 256px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: $main-color;
+              margin: 0 auto;
+
+              @media (max-width:1380px) {
+                width: 208px !important;
+              }
+            }
+
+            button {
+              background-color: white;
+              border: 1px solid $main-green;
+              width: 256px;
+              height: 40px;
+              text-align: center;
+              border-radius: 4px;
+              margin: 8px;
+
+              @media (max-width:1380px) {
+                width: 208px !important;
+              }
+
+              p.btn {
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $main-green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

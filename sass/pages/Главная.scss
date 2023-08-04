@@ -68,41 +68,7 @@ header {
   }
 
   .container {
-    ul.about {
-      @media (max-width:530px) {
-        display: grid !important;
-      }
-
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 40px;
-
-      li {
-        text-align: center;
-
-        h1 {
-          font-family: $font-family;
-          font-weight: 700;
-          font-size: 36px;
-          line-height: 54px;
-          color: $main-color;
-        }
-
-        a {
-          display: block;
-          margin-top: 18px;
-          font-family: $font-family;
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 24px;
-          color: $hardest;
-
-          i.fa {
-            margin-left: 8px;
-          }
-        }
-      }
-    }
+   
 
     .row {
       justify-content: space-between;
@@ -283,11 +249,6 @@ header {
             width: 208px !important;
           }
 
-          &:hover {
-            color: white;
-            background-color: rgba(255, 102, 51, 1);
-            border: 1px solid rgba(255, 102, 51, 1);
-          }
         }
       }
 

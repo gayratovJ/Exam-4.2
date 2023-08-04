@@ -105,6 +105,14 @@ nav .container ul.Menu li {
   text-align: center;
   margin-right: 24px;
 }
+nav .container ul.Menu li:hover {
+  position: relative;
+  top: -10px;
+  transition: 1s;
+}
+nav .container ul.Menu li:hover h5 {
+  color: #F63;
+}
 @media (max-width: 1200px) {
   nav .container ul.Menu li {
     margin-right: 16px;
@@ -117,15 +125,15 @@ nav .container ul.Menu li a h5 {
   line-height: 18px;
   color: rgb(65, 65, 65);
 }
-nav .container ul.acc {
+nav ul.acc {
   display: flex;
 }
 @media (max-width: 690px) {
-  nav .container ul.acc {
+  nav ul.acc {
     display: none !important;
   }
 }
-nav .container ul.acc li a h5 {
+nav ul.acc li a h5 {
   margin-top: 8px;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -136,15 +144,15 @@ nav .container ul.acc li a h5 {
   margin-right: 18px;
 }
 @media (max-width: 780px) {
-  nav .container ul.acc li a h5 {
+  nav ul.acc li a h5 {
     display: none;
   }
 }
-nav .container ul.acc li a i.fa {
+nav ul.acc li a i.fa {
   margin-top: 10px;
 }
 @media (max-width: 780px) {
-  nav .container ul.acc li a i.fa {
+  nav ul.acc li a i.fa {
     display: none;
   }
 }

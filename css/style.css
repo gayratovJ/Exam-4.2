@@ -37,7 +37,6 @@
 
 main {
   font-family: "Rubik", sans-serif;
-  background-color: black;
 }
 main section .container .row {
   display: flex !important;
@@ -129,6 +128,206 @@ main section .container .row .col-3 .product-card-footer button {
   }
 }
 main section .container .row .col-3 .product-card-footer button p.btn {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #70C05B;
+}
+
+header {
+  font-family: "Rubik", sans-serif;
+}
+header section .container .card-row {
+  display: flex !important;
+  justify-content: space-between;
+}
+@media (max-width: 1124px) {
+  header section .container .card-row {
+    display: grid !important;
+    justify-content: center;
+  }
+  header section .container .card-row .col-3 {
+    margin-bottom: 40px;
+  }
+}
+header section .container .card-row .col-3 {
+  width: 272px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+header section .container .card-row .col-3:hover {
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+header section .container .card-row .col-3:hover .img .heart {
+  left: 240px;
+  transition: 0.5s;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row .col-3 {
+    width: 224px !important;
+  }
+}
+header section .container .card-row .col-3 .product-Flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+header section .container .card-row .col-3 .product-Flex .product-card-flex1 p.head {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #414141;
+}
+header section .container .card-row .col-3 .product-Flex .product-card-flex1 p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BFBFBF;
+  margin-top: 0px;
+}
+header section .container .card-row .col-3 .product-Flex .product-card-flex p.Price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+}
+header section .container .card-row .col-3 .product-Flex .product-card-flex h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BFBFBF;
+  margin-top: 0px;
+}
+header section .container .card-row .col-3 .product-card-footer p.text {
+  width: 256px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #414141;
+  margin: 0 auto;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row .col-3 .product-card-footer p.text {
+    width: 208px !important;
+  }
+}
+header section .container .card-row .col-3 .product-card-footer button {
+  background-color: white;
+  border: 1px solid #70C05B;
+  width: 256px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 8px;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row .col-3 .product-card-footer button {
+    width: 208px !important;
+  }
+}
+header section .container .card-row .col-3 .product-card-footer button p.btn {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #70C05B;
+}
+
+header {
+  font-family: "Rubik", sans-serif;
+}
+header section .container .card-row1 {
+  display: flex !important;
+  justify-content: space-between;
+}
+@media (max-width: 1124px) {
+  header section .container .card-row1 {
+    display: grid !important;
+    justify-content: center;
+  }
+  header section .container .card-row1 .col-3 {
+    margin-bottom: 40px;
+  }
+}
+header section .container .card-row1 .col-3 {
+  width: 272px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+header section .container .card-row1 .col-3:hover {
+  box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
+}
+header section .container .card-row1 .col-3:hover .img .heart {
+  left: 240px;
+  transition: 0.5s;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row1 .col-3 {
+    width: 224px !important;
+  }
+}
+header section .container .card-row1 .col-3 .product-Flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+header section .container .card-row1 .col-3 .product-Flex .product-card-flex1 p.head {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #414141;
+}
+header section .container .card-row1 .col-3 .product-Flex .product-card-flex1 p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BFBFBF;
+  margin-top: 0px;
+}
+header section .container .card-row1 .col-3 .product-Flex .product-card-flex p.Price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+}
+header section .container .card-row1 .col-3 .product-Flex .product-card-flex h3 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #BFBFBF;
+  margin-top: 0px;
+}
+header section .container .card-row1 .col-3 .product-card-footer p.text {
+  width: 256px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #414141;
+  margin: 0 auto;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row1 .col-3 .product-card-footer p.text {
+    width: 208px !important;
+  }
+}
+header section .container .card-row1 .col-3 .product-card-footer button {
+  background-color: white;
+  border: 1px solid #70C05B;
+  width: 256px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 8px;
+}
+@media (max-width: 1380px) {
+  header section .container .card-row1 .col-3 .product-card-footer button {
+    width: 208px !important;
+  }
+}
+header section .container .card-row1 .col-3 .product-card-footer button p.btn {
   cursor: pointer;
   font-weight: 400;
   font-size: 16px;

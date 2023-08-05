@@ -2,7 +2,7 @@ const productsRow = document.querySelector( ".row" );
 const productsCol = document.querySelector( "header .card-row" );
 const productsCol1 = document.querySelector( "header .card-row1" );
 console.log( productsCol );
-function getProductCard( product ) {
+function productCol( product ) {
   const productCard = document.createElement( "div" );
   productCard.className = "col-3";
 
@@ -72,7 +72,7 @@ function getProductCard( product ) {
   return productCard;
 }
 
-function getProductCol( pr1 ) {
+function Card( pr1 ) {
   const productCard = document.createElement( "div" );
   productCard.className = "col-3";
 
@@ -142,7 +142,7 @@ function getProductCol( pr1 ) {
   return productCard;
 }
 
-function getProductCol( pr2 ) {
+function footerCard( pr2 ) {
   const productCard = document.createElement( "div" );
   productCard.className = "col-3";
 
@@ -213,17 +213,17 @@ function getProductCol( pr2 ) {
 }
 
 products.map( ( product ) => {
-  let card = getProductCard( product );
+  let card = productCol( product );
   productsRow.append( card );
 } );
 
 products.map( ( pr1 ) => {
-  let card = getProductCol( pr1 );
+  let card = Card( pr1 );
   productsCol.append( card );
 } );
 
 products.map( ( pr2 ) => {
-  let card = getProductCol( pr2 );
+  let card = footerCard( pr2 );
   productsCol1.append( card );
 } );
 let discountProducts = products.filter( ( pr ) => pr.discount ).slice( -4 );

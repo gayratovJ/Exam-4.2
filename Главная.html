@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/container.min.css">
   <link rel="stylesheet" href="./css/footer.min.css">
+  <link rel="stylesheet" href="./css/header.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,14 +19,14 @@
   <nav>
     <div class="container">
       <div class="logo">
-        <a href="./Главная.html">
+        <a href="#!">
           <img class="logo" src="./assets/images/products/Group.png" alt="Logo of Company">
         </a>
         <h4 class="logo">СЕВЕРЯНОЧКА</h4>
       </div>
       <div class="drop-down">
         <i class="fa fa-bars"></i>
-        <a href="./Категории.html">
+        <a href="">
           <h3>Каталог</h3>
         </a>
       </div>
@@ -53,8 +54,27 @@
       </ul>
     </div>
   </nav>
-  <div class="drop-down">
-
+  <div class="drop">
+    <div class="container">
+      <ul>
+        <li><a href="">Молоко, сыр, яйцо</a></li>
+        <li><a href="">Хлеб</a></li>
+        <li><a href="">Фрукты и овощи</a></li>
+        <li><a href="">Замороженные продукты</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Напитки</a></li>
+        <li><a href="">Кондитерские изделия</a></li>
+        <li><a href="">Чай, кофе</a></li>
+        <li><a href="">Бакалея</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Здоровое питание</a></li>
+        <li><a href="">Зоотовары</a></li>
+        <li><a href="">Детское питание</a></li>
+        <li><a href="">Мясо, птица, колбаса</a></li>
+      </ul>
+    </div>
   </div>
   <div class="nav-bottom">
     <div class="drop-down">
@@ -78,50 +98,53 @@
   <div class="header-img">
     <img src="./assets/images/products/Sliders.png" alt="">
   </div>
-  <!-- fisrt -->
   <header>
-    <section>
-      <div class="container">
-        <ul class="about">
-          <li>
-            <h1>Акции</h1>
-          </li>
-          <li>
-            <a href="./Все продукты.html">
-              Все продукты
-              <i class="fa fa-chevron-right"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="card-row">
+    <div class="container">
+      <!-- fisrt -->
+      <div class="main-row row">
+        <div class="main-flex flex">
+          <ul class="about">
+            <li>
+              <h1>Акции</h1>
+            </li>
+            <li>
+              <a href="./Все продукты.html">
+                Все продукты
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
       </div>
-    </section>
-  </header>-p'[]
-  <!-- midddle-->
-  <main>
-    <section>
-      <div class="container">
-        <ul class="about">
-          <li>
-            <h1>Новинки</h1>
-          </li>
-          <li>
-            <a href="./Все продукты.html">
-              Все продукты
-              <i class="fa fa-chevron-right"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="row">
+    </div>
+
+    <!-- midddle-->
+    <div class="container">
+      <div class="new-row row">
+
+        <div class="new-flex flex">
+          <ul class="about">
+            <li>
+              <h1>Новинки</h1>
+            </li>
+            <li>
+              <a href="./Все продукты.html">
+                Все продукты
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+
         </div>
+
       </div>
-    </section>
-  </main>
-  <!-- last -->
-  <header>
-    <section>
-      <div class="container">
+    </div>
+    <!-- last -->
+    <div class="container">
+
+
+      <div class="old-row row" style="display: flex; margin-bottom: 0px;">
         <ul class="about">
           <li>
             <h1>Покупали раньше</h1>
@@ -133,33 +156,18 @@
             </a>
           </li>
         </ul>
-        <div class="card-row1">
+        <div class="old-flex flex">
+
         </div>
+
       </div>
-    </section>
+    </div>
   </header>
   <section>
     <div class="container">
       <h1>Специальные предложения</h1>
       <div class="row">
-        <div class="col-6">
-          <div class="col-3">
-            <h3>Оформите карту «Северяночка»</h3>
-            <p>И получайте бонусы при покупке в магазинах и на сайте</p>
-          </div>
-          <div class="col-3">
-            <img src="./assets/images/products/Карта лояльности-10 1.png" alt="">
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="col-3">
-            <h3>Покупайте акционные товары</h3>
-            <p>И получайте вдвое больше бонусов</p>
-          </div>
-          <div class="col-3">
-            <img src="./assets/images/products/73 1.png" alt="">
-          </div>
-        </div>
+
       </div>
     </div>
   </section>
@@ -173,7 +181,9 @@
         <li><button><a href="#!">д.Диюр</a></button></li>
 
       </ul>
-      <img src="./assets/images/products/image 12.png" alt="">
+      <iframe style="width: 100%;max-width: 100%;border:0"
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5085.630993038154!2d69.3313974!3d41.247496!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1691320904282!5m2!1sru!2s"
+        width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </main>
   <section class="about">
@@ -246,10 +256,10 @@
       </ul>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/product-data.js"></script>
+  <script src="./js/home2.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/onclick.js"></script>
-  <script src="./js/drop-down.js"></script>
 </body>
 
 </html>

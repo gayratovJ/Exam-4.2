@@ -144,29 +144,29 @@ nav .container .logo h4.logo {
     display: none;
   }
 }
-nav .container .drop-down {
+nav .container .drop {
   display: flex;
   background-color: rgb(112, 192, 91);
   height: 40px !important;
   border-radius: 4px;
 }
 @media (max-width: 690px) {
-  nav .container .drop-down {
+  nav .container .drop {
     display: none !important;
   }
 }
-nav .container .drop-down i.fa {
+nav .container .drop i.fa {
   color: white;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
-nav .container .drop-down a {
+nav .container .drop a {
   display: block !important;
   text-decoration: none;
   list-style: none;
 }
-nav .container .drop-down a h3 {
+nav .container .drop a h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -176,7 +176,7 @@ nav .container .drop-down a h3 {
   padding-right: 8px;
 }
 @media (max-width: 1200px) {
-  nav .container .drop-down a h3 {
+  nav .container .drop a h3 {
     display: none;
   }
 }
@@ -340,6 +340,11 @@ nav ul.acc li a i.fa {
   }
 }
 
+.down {
+  margin-bottom: 160px !important;
+  transition: 1s !important;
+}
+
 .row {
   display: flex;
 }
@@ -359,8 +364,75 @@ nav ul.acc li a i.fa {
   width: 33.33333333%;
 }
 
+.drop {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: -150px;
+  height: 100px;
+}
+.drop .container {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 880px) {
+  .drop .container {
+    display: grid !important;
+  }
+}
+@media (max-width: 830px) {
+  .drop .container {
+    display: flex !important;
+  }
+}
+@media (max-width: 880px) {
+  .drop .container ul {
+    display: flex !important;
+  }
+}
+@media (max-width: 830px) {
+  .drop .container ul {
+    display: grid !important;
+  }
+}
+.drop .container ul li {
+  margin-bottom: 10px;
+}
+@media (max-width: 880px) {
+  .drop .container ul li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+.drop .container ul li a {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(112, 192, 91);
+}
+@media (max-width: 880px) {
+  .drop .container ul li a {
+    background-color: transparent;
+    border: 1px solid rgb(112, 192, 91);
+    border-radius: 4px;
+    padding: 8px;
+    color: rgb(112, 192, 91);
+  }
+}
+@media (max-width: 830px) {
+  .drop .container ul li a {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 8px;
+  }
+}
+
 .header-img img {
-  margin-top: 110px;
+  height: 190px;
+  margin-top: -150px;
+  margin-top: 0px;
   width: 100%;
 }
 
@@ -374,42 +446,11 @@ header {
     height: 5820px !important;
   }
 }
-header .container ul.about {
-  display: flex;
-  margin-bottom: 40px;
-}
-@media (max-width: 530px) {
-  header .container ul.about {
-    display: grid !important;
-  }
-}
-header .container ul.about li {
-  text-align: center;
-}
-header .container ul.about li h1 {
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
-  color: rgb(65, 65, 65);
-}
-header .container ul.about li a {
-  display: block;
-  margin-top: 18px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgb(96, 96, 96);
-}
-header .container ul.about li a i.fa {
-  margin-left: 8px;
-}
 header .container .row {
   justify-content: space-between;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
-@media (max-width: 730px) {
+@media (max-width: 1100px) {
   header .container .row {
     display: grid !important;
     justify-content: center;
@@ -1201,34 +1242,34 @@ section .container .row {
     margin-bottom: 40px;
   }
 }
-section .container .row .col-3 {
+section .container .row .product-card .col-3 {
   border-radius: 4px;
   height: 380px !important;
   background-color: white;
   width: 280px;
 }
 @media (max-width: 1380px) {
-  section .container .row .col-3 {
+  section .container .row .product-card .col-3 {
     width: 224px !important;
   }
 }
-section .container .row .col-3:hover {
+section .container .row .product-card .col-3:hover {
   box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
 }
-section .container .row .col-3:hover .img .heart {
+section .container .row .product-card .col-3:hover .img .heart {
   left: 240px;
   transition: 0.5s;
 }
 @media (max-width: 1380px) {
-  section .container .row .col-3 .col-3:hover .img .heart {
+  section .container .row .product-card .col-3 .col-3:hover .img .heart {
     left: 100px;
     transition: 0.5s;
   }
 }
-section .container .row .col-3 .img {
+section .container .row .product-card .col-3 .img {
   overflow: hidden;
 }
-section .container .row .col-3 .img .negative {
+section .container .row .product-card .col-3 .img .negative {
   border-radius: 4px;
   background-color: rgb(255, 102, 51);
   width: 56px;
@@ -1236,7 +1277,7 @@ section .container .row .col-3 .img .negative {
   top: -55px;
   left: 10px;
 }
-section .container .row .col-3 .img .negative h4 {
+section .container .row .product-card .col-3 .img .negative h4 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1244,7 +1285,7 @@ section .container .row .col-3 .img .negative h4 {
   color: white;
   padding: 8px;
 }
-section .container .row .col-3 .img .heart {
+section .container .row .product-card .col-3 .img .heart {
   border: none;
   background-color: #f3f2f1;
   position: relative;
@@ -1255,38 +1296,38 @@ section .container .row .col-3 .img .heart {
   height: 32px;
   z-index: 1;
 }
-section .container .row .col-3 .img .heart i.fa {
+section .container .row .product-card .col-3 .img .heart i.fa {
   padding: 8px;
   width: 24px;
   height: 24px;
 }
-section .container .row .col-3 .img .heart i.fa:hover {
+section .container .row .product-card .col-3 .img .heart i.fa:hover {
   color: rgb(255, 102, 51);
 }
-section .container .row .col-3 ul.price {
+section .container .row .product-card .col-3 ul.price {
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
   padding-top: 8px;
 }
-section .container .row .col-3 ul.price li {
+section .container .row .product-card .col-3 ul.price li {
   margin-left: 8px;
 }
-section .container .row .col-3 ul.price li h5 {
+section .container .row .product-card .col-3 ul.price li h5 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   color: rgb(65, 65, 65);
 }
-section .container .row .col-3 ul.price li p {
+section .container .row .product-card .col-3 ul.price li p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: rgb(191, 191, 191);
 }
-section .container .row .col-3 ul.price li h6 {
+section .container .row .product-card .col-3 ul.price li h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1294,7 +1335,7 @@ section .container .row .col-3 ul.price li h6 {
   color: rgb(96, 96, 96);
   margin-right: 8px;
 }
-section .container .row .col-3 p.text {
+section .container .row .product-card .col-3 p.text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1306,25 +1347,25 @@ section .container .row .col-3 p.text {
   margin-bottom: 8px;
 }
 @media (max-width: 1380px) {
-  section .container .row .col-3 p.text {
+  section .container .row .product-card .col-3 p.text {
     width: 208px !important;
   }
 }
-section .container .row .col-3 ul.star {
+section .container .row .product-card .col-3 ul.star {
   display: flex;
   margin-left: 8px;
   margin-bottom: 8px;
 }
-section .container .row .col-3 ul.star li {
+section .container .row .product-card .col-3 ul.star li {
   margin-right: 4px;
 }
-section .container .row .col-3 ul.star li i.fa {
+section .container .row .product-card .col-3 ul.star li i.fa {
   color: rgb(191, 191, 191);
 }
-section .container .row .col-3 ul.star li i.fa:hover {
+section .container .row .product-card .col-3 ul.star li i.fa:hover {
   color: rgb(255, 102, 51);
 }
-section .container .row .col-3 button {
+section .container .row .product-card .col-3 button {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1340,46 +1381,45 @@ section .container .row .col-3 button {
   margin-left: 8px;
 }
 @media (max-width: 1380px) {
-  section .container .row .col-3 button {
+  section .container .row .product-card .col-3 button {
     width: 208px !important;
   }
 }
-section .container .row .col-3 button:hover {
+section .container .row .product-card .col-3 button:hover {
   color: white;
   background-color: rgb(255, 102, 51);
   border: 1px solid rgb(255, 102, 51);
 }
 @media (max-width: 1380px) {
-  section .container .row .col-3:nth-child(4) {
+  section .container .row .product-card .col-3:nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 730px) {
-  section .container .row .col-3:nth-child(4) {
+  section .container .row .product-card .col-3:nth-child(4) {
     display: block;
   }
 }
-
-main .container ul.about {
+section main .container ul.about {
   display: flex;
   margin-bottom: 40px;
 }
 @media (max-width: 530px) {
-  main .container ul.about {
+  section main .container ul.about {
     display: grid !important;
   }
 }
-main .container ul.about li {
+section main .container ul.about li {
   text-align: center;
 }
-main .container ul.about li h1 {
+section main .container ul.about li h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 54px;
   color: rgb(65, 65, 65);
 }
-main .container ul.about li a {
+section main .container ul.about li a {
   display: block;
   margin-top: 18px;
   font-family: "Rubik", sans-serif;
@@ -1388,50 +1428,50 @@ main .container ul.about li a {
   line-height: 24px;
   color: rgb(96, 96, 96);
 }
-main .container ul.about li a i.fa {
+section main .container ul.about li a i.fa {
   margin-left: 8px;
 }
-main .container .row {
+section main .container .row {
   justify-content: space-between;
   padding-bottom: 72px;
 }
 @media (max-width: 730px) {
-  main .container .row {
+  section main .container .row {
     display: grid !important;
     justify-content: center;
   }
-  main .container .row .col-3 {
+  section main .container .row .col-3 {
     margin-bottom: 40px;
   }
 }
-main .container .row .col-3 {
+section main .container .row .col-3 {
   border-radius: 4px;
   height: 380px !important;
   background-color: white;
   width: 280px;
 }
 @media (max-width: 1380px) {
-  main .container .row .col-3 {
+  section main .container .row .col-3 {
     width: 224px !important;
   }
 }
-main .container .row .col-3:hover {
+section main .container .row .col-3:hover {
   box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
 }
-main .container .row .col-3:hover .img .heart {
+section main .container .row .col-3:hover .img .heart {
   left: 240px;
   transition: 0.5s;
 }
 @media (max-width: 1380px) {
-  main .container .row .col-3 .col-3:hover .img .heart {
+  section main .container .row .col-3 .col-3:hover .img .heart {
     left: 100px;
     transition: 0.5s;
   }
 }
-main .container .row .col-3 .img {
+section main .container .row .col-3 .img {
   overflow: hidden;
 }
-main .container .row .col-3 .img .negative {
+section main .container .row .col-3 .img .negative {
   border-radius: 4px;
   background-color: rgb(255, 102, 51);
   width: 56px;
@@ -1439,7 +1479,7 @@ main .container .row .col-3 .img .negative {
   top: -55px;
   left: 10px;
 }
-main .container .row .col-3 .img .negative h4 {
+section main .container .row .col-3 .img .negative h4 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1447,7 +1487,7 @@ main .container .row .col-3 .img .negative h4 {
   color: white;
   padding: 8px;
 }
-main .container .row .col-3 .img .heart {
+section main .container .row .col-3 .img .heart {
   border: none;
   background-color: #f3f2f1;
   position: relative;
@@ -1458,15 +1498,15 @@ main .container .row .col-3 .img .heart {
   height: 32px;
   z-index: 1;
 }
-main .container .row .col-3 .img .heart i.fa {
+section main .container .row .col-3 .img .heart i.fa {
   padding: 8px;
   width: 24px;
   height: 24px;
 }
-main .container .row .col-3 .img .heart i.fa:hover {
+section main .container .row .col-3 .img .heart i.fa:hover {
   color: rgb(255, 102, 51);
 }
-main .container .row .col-3 ul.price {
+section main .container .row .col-3 ul.price {
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
@@ -1474,24 +1514,24 @@ main .container .row .col-3 ul.price {
   padding-bottom: 0px;
   height: 50px;
 }
-main .container .row .col-3 ul.price li {
+section main .container .row .col-3 ul.price li {
   margin-left: 8px;
 }
-main .container .row .col-3 ul.price li h5 {
+section main .container .row .col-3 ul.price li h5 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   color: rgb(65, 65, 65);
 }
-main .container .row .col-3 ul.price li p {
+section main .container .row .col-3 ul.price li p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: rgb(191, 191, 191);
 }
-main .container .row .col-3 ul.price li h6 {
+section main .container .row .col-3 ul.price li h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1499,7 +1539,7 @@ main .container .row .col-3 ul.price li h6 {
   color: rgb(96, 96, 96);
   margin-right: 8px;
 }
-main .container .row .col-3 p.text {
+section main .container .row .col-3 p.text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1511,25 +1551,25 @@ main .container .row .col-3 p.text {
   margin-bottom: 8px;
 }
 @media (max-width: 1380px) {
-  main .container .row .col-3 p.text {
+  section main .container .row .col-3 p.text {
     width: 208px !important;
   }
 }
-main .container .row .col-3 ul.star {
+section main .container .row .col-3 ul.star {
   display: flex;
   margin-left: 8px;
   margin-bottom: 8px;
 }
-main .container .row .col-3 ul.star li {
+section main .container .row .col-3 ul.star li {
   margin-right: 4px;
 }
-main .container .row .col-3 ul.star li i.fa {
+section main .container .row .col-3 ul.star li i.fa {
   color: rgb(191, 191, 191);
 }
-main .container .row .col-3 ul.star li i.fa:hover {
+section main .container .row .col-3 ul.star li i.fa:hover {
   color: rgb(255, 102, 51);
 }
-main .container .row .col-3 button {
+section main .container .row .col-3 button {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1547,22 +1587,22 @@ main .container .row .col-3 button {
   top: -45px;
 }
 @media (max-width: 1380px) {
-  main .container .row .col-3 button {
+  section main .container .row .col-3 button {
     width: 208px !important;
   }
 }
-main .container .row .col-3 button:hover {
+section main .container .row .col-3 button:hover {
   color: white;
   background-color: rgb(255, 102, 51);
   border: 1px solid rgb(255, 102, 51);
 }
 @media (max-width: 1380px) {
-  main .container .row .col-3:nth-child(4) {
+  section main .container .row .col-3:nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 730px) {
-  main .container .row .col-3:nth-child(4) {
+  section main .container .row .col-3:nth-child(4) {
     display: block;
   }
 }

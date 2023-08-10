@@ -1,0 +1,265 @@
+@use "../utils/footer.scss";
+@use "../utils/header.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+// important codes
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-left: 116px;
+  margin-right: 116px;
+  max-width: 100%;
+
+  @media (max-width:980px) {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+
+.down {
+  padding-top: 160px !important;
+  visibility: visible !important;
+  overflow: visible !important;
+  transition: 1s !important;
+}
+
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+// variables
+$font-family: 'Rubik',
+sans-serif;
+$main-color:rgba(65, 65, 65, 1);
+$hard:rgba(143, 143, 143, 1);
+$hardest:rgba(96, 96, 96, 1);
+
+// coding
+
+.drop {
+  background-color: white;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 0px;
+  padding-top: -150px;
+  height: 100px;
+  // margin-bottom: -45px;
+  visibility: hidden;
+  overflow: hidden;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width:880px) {
+      display: grid !important;
+    }
+
+    @media (max-width:830px) {
+      display: flex !important;
+    }
+
+    ul {
+      @media (max-width:880px) {
+        display: flex !important;
+      }
+
+      @media (max-width:830px) {
+        display: grid !important;
+      }
+
+      li {
+        margin-bottom: 10px;
+
+        @media (max-width:880px) {
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+
+        a {
+          @media (max-width:880px) {
+            background-color: transparent;
+            border: 1px solid rgba(112, 192, 91, 1);
+            border-radius: 4px;
+            padding: 8px;
+            color: rgba(112, 192, 91, 1);
+
+
+          }
+
+          @media (max-width:830px) {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 8px;
+          }
+
+          &:hover {
+            color: rgba(255, 102, 51, 1);
+          }
+
+          font-family: $font-family;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          color: rgba(112, 192, 91, 1);
+        }
+      }
+    }
+  }
+}
+
+.header-img {
+
+  img {
+    height: 190px;
+    margin-top: -150px;
+    margin-top: 0px;
+    width: 100%;
+  }
+}
+
+.light {
+  background-color: black !important;
+}
+
+.light * {
+  color: grey !important;
+}
+
+.darkbtn {
+  padding-top: 0px !important;
+  transition: 1s !important;
+  background-color: white !important;
+}
+
+.dark {
+  background-color: #FBF8EC;
+  margin-top: -5px;
+  padding-top: 50px;
+  border: none;
+
+  .container {
+    button.dark {
+      border-radius: 30px;
+      background-color: yellow;
+    }
+  }
+}
+
+body {
+  background-color: #FBF8EC;
+
+  main {
+    padding-top: 120px;
+    padding-bottom: 72px;
+
+    section {
+      .container {
+        .products-header {
+          h1 {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 54px;
+            color: $main-color;
+            padding-bottom: 20px;
+          }
+        }
+
+        .products-row {
+
+          @media (max-width:1200px) {
+            display: grid !important;
+          }
+
+          div {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 64px;
+            color: $hardest;
+          }
+
+
+          .product-card {
+            width: 272px;
+            background-color: white;
+            height: 430px;
+            padding: 8px;
+
+            .product-card-footer {
+              h3 {
+                a {
+                  font-family: $font-family;
+                  color: $main-color;
+                  font-weight: 700;
+                  font-size: 18px;
+                  line-height: 27px;
+
+                }
+
+                padding-bottom: 8px;
+              }
+
+              p {
+                i {
+                  font-family: $font-family;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: $main-color;
+                }
+              }
+
+              p {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $main-color;
+                width: 256px;
+              }
+
+              button {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(112, 192, 91, 1);
+                border: 1px solid rgba(112, 192, 91, 1);
+                padding: 8px;
+                text-align: center;
+                border-radius: 4px;
+                background-color: transparent;
+                width: 256px;
+                margin-top: 16px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

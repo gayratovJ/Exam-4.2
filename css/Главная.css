@@ -145,9 +145,10 @@ nav .container .logo h4.logo {
 }
 nav .container .drop {
   display: flex;
-  background-color: rgb(112, 192, 91);
+  background-color: rgb(65, 65, 65);
   height: 40px !important;
   border-radius: 4px;
+  padding-top: 120px;
 }
 @media (max-width: 690px) {
   nav .container .drop {
@@ -340,10 +341,11 @@ nav ul.acc li a i.fa {
 }
 
 .down {
-  padding-top: 160px !important;
+  padding-top: 150px !important;
   visibility: visible !important;
   overflow: visible !important;
   transition: 1s !important;
+  height: 300px;
 }
 
 .row {
@@ -369,8 +371,8 @@ nav ul.acc li a i.fa {
   background-color: white;
   width: 100%;
   max-width: 100%;
-  padding-bottom: 0px;
-  padding-top: -150px;
+  padding-bottom: 150px;
+  padding-top: -150px !important;
   height: 100px;
   visibility: hidden;
   overflow: hidden;
@@ -442,75 +444,106 @@ nav ul.acc li a i.fa {
   width: 100%;
 }
 
-header {
+.light {
+  background-color: black !important;
+}
+
+.light * {
+  color: grey !important;
+}
+
+.darkbtn {
+  padding-top: 0px !important;
+  transition: 1s !important;
+  background-color: white !important;
+}
+
+.dark {
   background-color: #FBF8EC;
+  margin-top: -5px;
+  padding-top: 50px;
+  border: none;
+}
+.dark .container button.dark {
+  border-radius: 30px;
+  background-color: yellow;
+}
+
+body {
+  background-color: #FBF8EC;
+}
+body header {
   margin-top: -10px;
   padding-top: 80px;
 }
 @media (max-width: 730px) {
-  header {
+  body header {
     height: 5820px !important;
   }
 }
-header .container .row {
+body header .container .row {
   justify-content: space-between;
   padding-bottom: 120px;
 }
 @media (max-width: 1100px) {
-  header .container .row {
+  body header .container .row {
     display: grid !important;
     justify-content: center;
   }
-  header .container .row .col-3 {
+  body header .container .row .col-3 {
     margin-bottom: 40px;
   }
 }
-header .container .row .col-3 {
+body header .container .row .col-3 {
+  padding: 8px;
   border-radius: 4px;
   height: 380px !important;
-  background-color: white;
+  background-color: white !important;
   width: 280px;
 }
+body header .container .row .col-3 .product-Flex {
+  display: flex;
+}
 @media (max-width: 1380px) {
-  header .container .row .col-3 {
+  body header .container .row .col-3 {
     width: 224px !important;
   }
 }
-header .container .row .col-3:hover {
+body header .container .row .col-3:hover {
   box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
 }
-header .container .row .col-3:hover .img .heart {
+body header .container .row .col-3:hover .img .heart {
   left: 240px;
   transition: 0.5s;
 }
 @media (max-width: 1380px) {
-  header .container .row .col-3 .col-3:hover .img .heart {
+  body header .container .row .col-3 .col-3:hover .img .heart {
     left: 100px;
     transition: 0.5s;
   }
 }
-header .container .row .col-3 .img {
+body header .container .row .col-3 .img {
   overflow: hidden;
 }
-header .container .row .col-3 .img .negative {
+body header .container .row .col-3 .img .negative {
   border-radius: 4px;
-  background-color: rgb(255, 102, 51);
+  background-color: rgb(255, 102, 51) !important;
   width: 56px;
   position: relative;
   top: -55px;
   left: 10px;
 }
-header .container .row .col-3 .img .negative h4 {
+body header .container .row .col-3 .img .negative h4 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: white !important;
   padding: 8px;
 }
-header .container .row .col-3 .img .heart {
+body header .container .row .col-3 .img .heart {
   border: none;
-  background-color: #f3f2f1;
+  background-color: #f3f2f1 !important;
   position: relative;
   width: 32px;
   border-radius: 4px;
@@ -519,76 +552,76 @@ header .container .row .col-3 .img .heart {
   height: 32px;
   z-index: 1;
 }
-header .container .row .col-3 .img .heart i.fa {
+body header .container .row .col-3 .img .heart i.fa {
   padding: 8px;
   width: 24px;
   height: 24px;
 }
-header .container .row .col-3 .img .heart i.fa:hover {
+body header .container .row .col-3 .img .heart i.fa:hover {
   color: rgb(255, 102, 51);
 }
-header .container .row .col-3 ul.price {
+body header .container .row .col-3 ul.price {
   display: flex;
   justify-content: space-between;
   margin-top: -50px;
   padding-top: 8px;
 }
-header .container .row .col-3 ul.price li {
+body header .container .row .col-3 ul.price li {
   margin-left: 8px;
 }
-header .container .row .col-3 ul.price li h5 {
+body header .container .row .col-3 ul.price li h5 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  color: rgb(65, 65, 65);
+  color: rgb(65, 65, 65) !important;
 }
-header .container .row .col-3 ul.price li p {
+body header .container .row .col-3 ul.price li p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  color: rgb(191, 191, 191);
+  color: rgb(191, 191, 191) !important;
 }
-header .container .row .col-3 ul.price li h6 {
+body header .container .row .col-3 ul.price li h6 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgb(96, 96, 96);
+  color: rgb(96, 96, 96) !important;
   margin-right: 8px;
 }
-header .container .row .col-3 p.text {
+body header .container .row .col-3 p.text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: rgb(65, 65, 65);
+  color: rgb(65, 65, 65) !important;
   width: 256px;
   margin-left: 8px;
   margin-top: 8px;
   margin-bottom: 8px;
 }
 @media (max-width: 1380px) {
-  header .container .row .col-3 p.text {
+  body header .container .row .col-3 p.text {
     width: 208px !important;
   }
 }
-header .container .row .col-3 ul.star {
+body header .container .row .col-3 ul.star {
   display: flex;
   margin-left: 8px;
   margin-bottom: 8px;
 }
-header .container .row .col-3 ul.star li {
+body header .container .row .col-3 ul.star li {
   margin-right: 4px;
 }
-header .container .row .col-3 ul.star li i.fa {
+body header .container .row .col-3 ul.star li i.fa {
   color: rgb(191, 191, 191);
 }
-header .container .row .col-3 ul.star li i.fa:hover {
+body header .container .row .col-3 ul.star li i.fa:hover {
   color: rgb(255, 102, 51);
 }
-header .container .row .col-3 button {
+body header .container .row .col-3 button {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -596,7 +629,7 @@ header .container .row .col-3 button {
   background-color: transparent;
   border-radius: 4px;
   border: 1px solid rgb(112, 192, 91);
-  color: rgb(112, 192, 91);
+  color: rgb(112, 192, 91) !important;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 265px;
@@ -604,29 +637,27 @@ header .container .row .col-3 button {
   margin-left: 8px;
 }
 @media (max-width: 1380px) {
-  header .container .row .col-3 button {
+  body header .container .row .col-3 button {
     width: 208px !important;
   }
 }
 @media (max-width: 1380px) {
-  header .container .row .col-3:nth-child(4) {
+  body header .container .row .col-3:nth-child(4) {
     display: none;
   }
 }
 @media (max-width: 730px) {
-  header .container .row .col-3:nth-child(4) {
+  body header .container .row .col-3:nth-child(4) {
     display: block;
   }
 }
-header .container .row:nth-child(2) {
+body header .container .row:nth-child(2) {
   padding-bottom: 120px;
 }
-
-section {
+body section {
   padding-top: 110px;
-  background-color: #FBF8EC;
 }
-section .container h1 {
+body section .container h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -634,20 +665,20 @@ section .container h1 {
   color: rgb(65, 65, 65);
   padding-bottom: 40px;
 }
-section .container .row {
+body section .container .row {
   justify-content: space-between;
   padding-bottom: 120px;
 }
 @media (max-width: 1320px) {
-  section .container .row {
+  body section .container .row {
     display: grid !important;
     justify-content: center;
   }
-  section .container .row .col-6 {
+  body section .container .row .col-6 {
     margin-bottom: 40px;
   }
 }
-section .container .row .col-6 {
+body section .container .row .col-6 {
   width: 584px;
   display: flex;
   padding-top: 30px;
@@ -658,44 +689,40 @@ section .container .row .col-6 {
   box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
 }
 @media (max-width: 690px) {
-  section .container .row .col-6 {
+  body section .container .row .col-6 {
     display: grid !important;
     width: 330px !important;
     height: 400px !important;
   }
 }
-section .container .row .col-6 .col-3 {
+body section .container .row .col-6 .col-3 {
   width: 258px;
 }
-section .container .row .col-6 .col-3 h3 {
+body section .container .row .col-6 .col-3 h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
   color: rgb(65, 65, 65);
 }
-section .container .row .col-6 .col-3 p {
+body section .container .row .col-6 .col-3 p {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: rgb(65, 65, 65);
 }
-section .container .row .col-6 .col-3:nth-child(2) {
+body section .container .row .col-6 .col-3:nth-child(2) {
   margin-top: -20px;
   margin-right: 31px;
 }
-section .container .row .col-6:nth-child(2) {
+body section .container .row .col-6:nth-child(2) {
   background-color: rgb(229, 255, 222);
 }
-section .container .row .col-6:nth-child(2) .col-3:nth-child(2) {
+body section .container .row .col-6:nth-child(2) .col-3:nth-child(2) {
   margin-left: 51px;
 }
-
-main {
-  background-color: #FBF8EC;
-}
-main .container h1 {
+body main .container h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -703,50 +730,46 @@ main .container h1 {
   color: rgb(65, 65, 65);
   padding-bottom: 40px;
 }
-main .container ul {
+body main .container ul {
   display: flex;
   padding-bottom: 24px;
 }
 @media (max-width: 504px) {
-  main .container ul {
+  body main .container ul {
     display: grid !important;
   }
 }
-main .container ul li {
+body main .container ul li {
   margin-bottom: 20px;
 }
-main .container ul li {
+body main .container ul li {
   margin-right: 24px;
 }
-main .container ul li button {
+body main .container ul li button {
   background-color: rgb(243, 242, 241);
   border: none;
   border-radius: 4px;
   width: 97px;
   height: 32px;
 }
-main .container ul li button:hover {
+body main .container ul li button:hover {
   background-color: rgb(112, 192, 91);
   transition: 0.5s;
 }
-main .container ul li button:hover a {
+body main .container ul li button:hover a {
   color: white;
 }
-main .container ul li button a {
+body main .container ul li button a {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: rgb(96, 96, 96);
 }
-main .container img {
+body main .container img {
   width: 100%;
 }
-
-section.about {
-  background-color: #FBF8EC;
-}
-section.about .container h1 {
+body section.about .container h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -754,39 +777,39 @@ section.about .container h1 {
   color: rgb(65, 65, 65);
   padding-bottom: 40px;
 }
-section.about .container .row {
+body section.about .container .row {
   justify-content: space-between;
 }
 @media (max-width: 1320px) {
-  section.about .container .row {
+  body section.about .container .row {
     justify-content: center;
   }
-  section.about .container .row .col-4 {
+  body section.about .container .row .col-4 {
     margin-bottom: 40px;
   }
 }
-section.about .container .row .col-4 {
+body section.about .container .row .col-4 {
   width: 376px !important;
   background-color: white;
   border-radius: 4px;
 }
 @media (max-width: 410px) {
-  section.about .container .row .col-4 {
+  body section.about .container .row .col-4 {
     width: 300px !important;
   }
-  section.about .container .row .col-4 img {
+  body section.about .container .row .col-4 img {
     width: 300px !important;
   }
 }
-section.about .container .row .col-4 img {
+body section.about .container .row .col-4 img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-section.about .container .row .col-4:hover {
+body section.about .container .row .col-4:hover {
   transition: 0.5s;
   box-shadow: 4px 8px 16px 0px rgba(255, 102, 51, 0.2);
 }
-section.about .container .row .col-4 p.date {
+body section.about .container .row .col-4 p.date {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -795,7 +818,7 @@ section.about .container .row .col-4 p.date {
   padding-left: 10px;
   color: rgb(143, 143, 143);
 }
-section.about .container .row .col-4 h3 {
+body section.about .container .row .col-4 h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -805,7 +828,7 @@ section.about .container .row .col-4 h3 {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-section.about .container .row .col-4 p.text {
+body section.about .container .row .col-4 p.text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -814,7 +837,7 @@ section.about .container .row .col-4 p.text {
   padding-left: 10px;
   padding-bottom: 10px;
 }
-section.about .container .row .col-4 button {
+body section.about .container .row .col-4 button {
   background-color: rgb(229, 255, 222);
   border-radius: 4px;
   width: 150px;
@@ -823,14 +846,14 @@ section.about .container .row .col-4 button {
   height: 40px;
   border: none;
 }
-section.about .container .row .col-4 button:hover {
+body section.about .container .row .col-4 button:hover {
   background-color: rgb(112, 192, 91);
   transition: 0.5s;
 }
-section.about .container .row .col-4 button:hover a {
+body section.about .container .row .col-4 button:hover a {
   color: white;
 }
-section.about .container .row .col-4 button a {
+body section.about .container .row .col-4 button a {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;

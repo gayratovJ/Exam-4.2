@@ -9,13 +9,29 @@
   <link rel="stylesheet" href="css/common.css" />
   <link rel="stylesheet" href="css/products.css" />
   <link rel="stylesheet" href="../css/footer.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+  button.page {
+    padding: 8px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .page-active{
+    background-color: red;
+  }
+</style>
 
 <body>
   <nav>
     <div class="container">
       <div class="logo">
-        <a href="Главная.html">
+        <a href="../Главная.html">
           <img class="logo" src="assets/images/products/Group.png" alt="Logo of Company">
         </a>
         <h4 class="logo">СЕВЕРЯНОЧКА</h4>
@@ -28,13 +44,13 @@
       </div>
       <input class="search-input" type="text" placeholder="Найти товар">
       <ul class="Menu">
-        <li><a href="./Товарь.html"><img src="assets/images/products/Frame 211 (1).svg" alt="">
+        <li><a href="../Товарь.html"><img src="assets/images/products/Frame 211 (1).svg" alt="">
             <h5>Избранное</h5>
           </a></li>
         <li><a href="cart.html"><img src="assets/images/products/Frame 211.svg" alt="">
             <h5>Продукты<span class="cart">0</span></h5>
           </a></li>
-        <li><a href="./Корзина.html"><img src="assets/images/products/shopping-cart.svg" alt="">
+        <li><a href="../Корзина.html"><img src="assets/images/products/shopping-cart.svg" alt="">
             <h5>Корзина</h5>
           </a></li>
       </ul>
@@ -87,7 +103,15 @@
         <div class="products-header">
           <h1>All products: <span class="total-products"></span></h1>
         </div>
-        <div class="products-row"></div>
+        <div class="products-row" style="display: flex !important; flex-wrap: wrap; justify-content:space-between;">
+        </div>
+        <div class="carousel">
+          <!-- <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button> -->
+        </div>
       </div>
     </section>
   </main>
@@ -95,10 +119,10 @@
     <div class="container">
       <li><img src="./assets/images/products/logo.png" alt=""></li>
       <ul class="footer-menu">
-        <li><a href="./О нас.html">О компании</a></li>
-        <li><a href="./Контакты.html">Контакты</a></li>
-        <li><a href="./Вакансии.html">Вакансии</a></li>
-        <li><a href="./Статьи.html">Статьи</a></li>
+        <li><a href="../О нас.html">О компании</a></li>
+        <li><a href="../Контакты.html">Контакты</a></li>
+        <li><a href="../Вакансии.html">Вакансии</a></li>
+        <li><a href="../Статьи.html">Статьи</a></li>
         <li><a href="">Политика обработки персональных данных</a></li>
       </ul>
       <ul class="num">

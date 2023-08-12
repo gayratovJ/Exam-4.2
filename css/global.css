@@ -193,6 +193,14 @@ nav .container input {
   line-height: 24px;
   color: rgb(143, 143, 143);
 }
+nav .container button.open-btn {
+  display: none;
+}
+@media (max-width: 680px) {
+  nav .container button.open-btn {
+    display: block !important;
+  }
+}
 nav .container ul.Menu {
   display: flex;
   margin-left: 40px;
@@ -859,6 +867,197 @@ body section.about .container .row .col-4 button a {
   font-size: 16px;
   line-height: 24px;
   color: rgb(112, 192, 91);
+}
+
+.madal-open {
+  display: block !important;
+  transition: 1s !important;
+}
+
+.madal {
+  background: rgba(252, 213, 186, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  position: fixed;
+  top: 0px;
+  display: none;
+}
+.madal button {
+  cursor: pointer;
+}
+.madal .madal-contain {
+  background-color: white;
+  width: 420px;
+  max-width: 100%;
+  padding: 70px;
+  position: relative;
+  left: 38%;
+  height: 431px;
+  top: 25%;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  /* Primary / L */
+  box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.2);
+}
+@media (max-width: 930px) {
+  .madal .madal-contain {
+    left: 20%;
+  }
+}
+@media (max-width: 610px) {
+  .madal .madal-contain {
+    left: 10%;
+  }
+}
+.madal .madal-contain button.open {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  background: var(--grayscale-lightest, #F3F2F1);
+  position: relative;
+  top: -70px;
+  left: 310px;
+}
+.madal .madal-contain button.open svg {
+  width: 24px;
+  height: 24px;
+}
+.madal .madal-contain h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgb(65, 65, 65);
+  text-align: center;
+  margin-top: -40px;
+  padding-bottom: 32px;
+}
+.madal .madal-contain p {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(143, 143, 143);
+  padding-left: -50px;
+}
+.madal .madal-contain label {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgb(143, 143, 143);
+  display: flex;
+  justify-content: center;
+  box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+}
+.madal .madal-contain label input.main-number {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  width: 110px;
+  line-height: 36px;
+  color: rgb(65, 65, 65);
+  padding: 12px 16px;
+  border: 1px solid var(--main-secondary, #70C05B);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.madal .madal-contain label input.number {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgb(65, 65, 65);
+  padding: 12px 16px;
+  width: 150px;
+  border: 1px solid var(--main-secondary, #70C05B);
+  border-left: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.madal .madal-contain button.enter {
+  margin-top: 32px;
+  margin-left: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #F63;
+  padding: 16px;
+  border-radius: 4px;
+  border: none;
+  width: 260px;
+  background: var(--main-primary-muted, #FCD5BA);
+}
+.madal .madal-contain .flex-btn {
+  display: flex;
+  gap: 36px;
+  padding-top: 36px;
+  padding-left: 10px;
+}
+.madal .madal-contain .flex-btn button {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(65, 65, 65);
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid rgb(65, 65, 65);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.madal .madal-contain .flex-btn button:hover {
+  color: #70C05B;
+  border: 1px solid var(--main-secondary, #70C05B);
+}
+
+.toggler-open {
+  left: 0px !important;
+  transition: 1s;
+}
+
+.toggler {
+  background: var(--main-bg-page, #FBF8EC);
+  z-index: 1111;
+  width: 20%;
+  padding-top: 120px;
+  position: fixed;
+  height: 100%;
+}
+.toggler ul.Menu {
+  margin-left: 40px;
+}
+@media (max-width: 980px) {
+  .toggler ul.Menu {
+    margin-left: 20px !important;
+  }
+}
+.toggler ul.Menu li {
+  text-align: center;
+  margin-right: 24px;
+  margin-bottom: 40px;
+}
+.toggler ul.Menu li:hover {
+  position: relative;
+  top: -10px;
+  transition: 1s;
+}
+.toggler ul.Menu li:hover h5 {
+  color: #F63;
+}
+@media (max-width: 1200px) {
+  .toggler ul.Menu li {
+    margin-right: 16px;
+  }
+}
+.toggler ul.Menu li a h5 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(65, 65, 65);
 }
 
 .container {

@@ -384,6 +384,12 @@ body main {
   padding-top: 120px;
   padding-bottom: 72px;
 }
+body main section .container .carousel {
+  display: flex;
+}
+body main section .container .carousel button {
+  gap: 40px;
+}
 body main section .container .products-header h1 {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
@@ -391,6 +397,9 @@ body main section .container .products-header h1 {
   line-height: 54px;
   color: rgb(65, 65, 65);
   padding-bottom: 20px;
+}
+body main section .container .products-row {
+  justify-content: space-between;
 }
 @media (max-width: 1200px) {
   body main section .container .products-row {

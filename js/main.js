@@ -24,7 +24,7 @@ function btnlight() {
 // products
 const categoriesMenu = document.querySelector( ".drop .container" );
 
-const categoryMenuToggleBtn = document.querySelector( "header button" );
+const categoryMenuToggleBtn = document.querySelector( "main button" );
 const categoriesMenuDropdown = document.querySelector( ".drop" );
 
 categoryMenuToggleBtn.addEventListener( "click", () => {
@@ -44,3 +44,4 @@ function getCartTotal() {
 }
 
 getCartTotal();
+

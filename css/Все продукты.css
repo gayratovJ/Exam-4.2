@@ -193,6 +193,14 @@ nav .container input {
   line-height: 24px;
   color: rgb(143, 143, 143);
 }
+nav .container button.open-btn {
+  display: none;
+}
+@media (max-width: 680px) {
+  nav .container button.open-btn {
+    display: block !important;
+  }
+}
 nav .container ul.Menu {
   display: flex;
   margin-left: 40px;

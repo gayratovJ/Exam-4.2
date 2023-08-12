@@ -349,7 +349,7 @@ articleCol.prepend( articleImg )
 // main add
 href.append( articleCol );
 console.log( href );
-  // return artcl;
+// return artcl;
 // }
 
 // articles.map( ( artcl ) => {
@@ -363,3 +363,15 @@ console.log( href );
 // let addCol = artclCol
 //   .toSorted( ( a, b ) => a.name - b.name )
 //   .slice( -3 );
+
+
+const open_madal = document.querySelector( "button.open-btn" );
+const madal_opening = document.querySelector( "body .madal" );
+const toogle = document.querySelector( ".toggler" )
+open_madal.addEventListener( "click", () => {
+  toogle.classList.toggle( "toggler-open" )
+} )
+
+function getMadal() {
+  toogle.classList.toggle( "toggler-open " )
+}

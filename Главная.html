@@ -31,6 +31,7 @@
         </a>
       </div>
       <input type="text" placeholder="Найти товар">
+      <button onclick="getMadal()" class="open-btn">click</button>
       <ul class="Menu">
         <li><a href="./Товарь.html"><img src="assets/images/products/Frame 211 (1).svg" alt="">
             <h5>Избранное<span class="cart">0</span></h5>
@@ -51,6 +52,26 @@
       </ul>
     </div>
   </nav>
+  <div class="toggler">
+    <ul class="Menu">
+      <li><a href="./Товарь.html"><img src="assets/images/products/Frame 211 (1).svg" alt="">
+          <h5>Избранное<span class="cart">0</span></h5>
+        </a></li>
+      <li><a href="./cart.js/products.html"><img src="assets/images/products/Frame 211.svg" alt="">
+          <h5>Продукты</h5>
+        </a></li>
+      <li><a href="./Корзина.html"><img src="assets/images/products/shopping-cart.svg" alt="">
+          <h5>Корзина</h5>
+        </a></li>
+      <li>
+        <button><svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+            <path
+              d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
   <div class="drop">
     <div class="container">
       <ul>
@@ -93,6 +114,29 @@
   <div class="header-img">
     <img src="./assets/images/products/Sliders.png" alt="">
   </div>
+  <div class="madal">
+    <div class="madal-contain">
+      <button class="open" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
+          <path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+        </svg>
+
+      </button>
+      <h3>Вход</h3>
+      <p>Телефон</p>
+      <label for="phone">
+        <br>
+        <input class="main-number" type="number" name="phone" id="phone" placeholder="+998">
+        <br>
+        <input class="number" type="number">
+      </label>
+      <button type="submit" class="enter">Вход</button>
+      <div class="flex-btn">
+        <button>Регистрация</button>
+        <button>Забыли пароль?</button>
+      </div>
+    </div>
+  </div>
   <button onclick="dark() , btnlight()" class="dark"><img
       src="./assets/images/articles/dark_mode_FILL0_wght400_GRAD0_opsz48.svg" alt=""></button>
   <header>
@@ -103,7 +147,7 @@
           <h1>Акции</h1>
         </li>
         <li>
-          <a href="./Все продукты.html">
+          <a href="./cart.js/products.html">
             Все продукты
             <i class="fa fa-chevron-right"></i>
           </a>
@@ -250,6 +294,7 @@
   <script src="./js/product-data.js"></script>
   <script src="./js/home2.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/home2.js"></script>
 </body>
 
 </html>

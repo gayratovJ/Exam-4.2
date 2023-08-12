@@ -103,6 +103,14 @@ nav {
       color: $hard;
     }
 
+    button.open-btn {
+      display: none;
+
+      @media (max-width:680px) {
+        display: block !important;
+      }
+    }
+
     ul.Menu {
       @media (max-width:690px) {
         display: none !important;

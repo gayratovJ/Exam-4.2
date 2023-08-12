@@ -642,3 +642,216 @@ body {
     }
   }
 }
+
+.madal-open {
+  display: block !important;
+  transition: 1s !important;
+}
+
+.madal {
+  background: rgba(252, 213, 186, 0.80);
+  width: 100%;
+  height: 100%;
+  z-index: 1111;
+  position: fixed;
+  top: -0px;
+  display: none;
+
+  button {
+    cursor: pointer;
+
+  }
+
+  .madal-contain {
+    background-color: white;
+    width: 420px;
+    max-width: 100%;
+    padding: 70px;
+    position: relative;
+    left: 38%;
+    height: 431px;
+    top: 25%;
+    border-radius: 4px;
+    background: var(--main-surface, #FFF);
+    /* Primary / L */
+    box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.20);
+
+    @media (max-width:930px) {
+      left: 20%;
+    }
+
+    @media (max-width:610px) {
+      left: 10%;
+    }
+
+    button.open {
+      border: none;
+      border-radius: 4px;
+      padding: 8px;
+      background: var(--grayscale-lightest, #F3F2F1);
+      position: relative;
+      top: -70px;
+      left: 310px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    h3 {
+      font-family: $font-family;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: $main-color;
+      text-align: center;
+      margin-top: -40px;
+      padding-bottom: 32px;
+    }
+
+    p {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: $hard;
+      padding-left: -50px;
+    }
+
+    label {
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: $hard;
+      display: flex;
+      justify-content: center;
+      box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.20);
+
+      input.main-number {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 24px;
+        width: 110px;
+        line-height: 36px;
+        color: $main-color;
+        padding: 12px 16px;
+        border: 1px solid var(--main-secondary, #70C05B);
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        // border-right: none;
+      }
+
+      input.number {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: $main-color;
+        padding: 12px 16px;
+        width: 150px;
+        border: 1px solid var(--main-secondary, #70C05B);
+        border-left: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+    }
+
+    button.enter {
+      margin-top: 32px;
+      margin-left: 10px;
+      font-family: $font-family;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: #F63;
+      padding: 16px;
+      border-radius: 4px;
+      border: none;
+      width: 260px;
+      background: var(--main-primary-muted, #FCD5BA);
+    }
+
+    .flex-btn {
+      display: flex;
+      gap: 36px;
+      padding-top: 36px;
+      padding-left: 10px;
+
+      button {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $main-color;
+        padding: 8px 12px;
+        background-color: transparent;
+        border: 1px solid $main-color;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          color: #70C05B;
+          border: 1px solid var(--main-secondary, #70C05B);
+        }
+      }
+    }
+  }
+}
+
+.toggler-open {
+  left: 0px !important;
+  transition: 1s;
+}
+
+.toggler {
+  background: var(--main-bg-page, #FBF8EC);
+  z-index: 1111;
+  width: 20%;
+  padding-top: 120px;
+  position: fixed;
+  height: 100%;
+
+  // left: -20%;
+  ul.Menu {
+
+    // display: flex;
+    margin-left: 40px;
+
+    @media (max-width:980px) {
+      margin-left: 20px !important;
+    }
+
+    li {
+      text-align: center;
+      margin-right: 24px;
+      margin-bottom: 40px;
+
+      &:hover {
+        position: relative;
+        top: -10px;
+        transition: 1s;
+
+        h5 {
+          color: #F63;
+
+        }
+      }
+
+      @media (max-width:1200px) {
+        margin-right: 16px;
+      }
+
+      a {
+        h5 {
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
